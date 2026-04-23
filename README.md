@@ -319,7 +319,7 @@ Reddit 封锁数据中心 IP。配置一个住宅代理即可解决：`agent-rea
 <details>
 <summary><strong>Compatible with Claude Code / Cursor / OpenClaw / Windsurf?</strong></summary>
 
-Yes! Agent Reach is an installer + configuration tool — any AI coding agent that can run shell commands can use it. Works with Claude Code, Cursor, OpenClaw, Windsurf, Codex, and more. Just `pip install agent-reach`, run `agent-reach install`, and the agent can start using the upstream tools immediately.
+Yes! Agent Reach is an installer + configuration tool — any AI coding agent that can run shell commands can use it. Works with Claude Code, Cursor, OpenClaw, Windsurf, Codex, and more. Just `uv add agent-reach`, run `agent-reach install`, and the agent can start using the upstream tools immediately.
 
 **OpenClaw note:** If your OpenClaw is using the default `messaging` tool profile, the agent won't be able to run shell commands. Enable exec first: `openclaw config set tools.profile "coding"` (or set `"tools": { "profile": "coding" }` in `~/.openclaw/openclaw.json`), then restart the Gateway and start a new conversation before installing.
 </details>
