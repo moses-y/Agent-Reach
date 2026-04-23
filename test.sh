@@ -13,8 +13,8 @@ echo ""
 # ── 1. 准备干净环境 ──
 echo "📦 创建测试环境..."
 TEST_DIR=$(mktemp -d)
-python3 -m venv "$TEST_DIR/venv"
-source "$TEST_DIR/venv/bin/activate"
+uv run uv venv
+# source "$TEST_DIR/venv/bin/activate  # Not needed with uv run"
 
 # ── 2. 安装 ──
 echo "📥 从 GitHub 安装..."
